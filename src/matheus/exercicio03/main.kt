@@ -1,4 +1,4 @@
-package matheus.exercicio3
+package matheus.exercicio03
 
 fun main() {
     val conjuntoDeInteiros = listOf<Int>(1,2,3,4,5)
