@@ -3,16 +3,16 @@ package raul.exc4
 fun main() {
     val guardaVolumes = GuardaVolumes()
 
-    val peca1 = Peca("Adidas", "Slim")
-    val peca2 = Peca("Nike", "Sport")
-    val peca3 = Peca("Vans", "Casual")
-    val peca4 = Peca("Oakley", "Discreto")
+    val pertence1 = Pertence("Adidas", "Slim"    )
+    val pertence2 = Pertence("Nike"  , "Sport"   )
+    val pertence3 = Pertence("Vans"  , "Casual"  )
+    val pertence4 = Pertence("Oakley", "Discreto")
 
-    val lista1 = mutableListOf(peca1, peca2)
-    val lista2 = mutableListOf(peca3, peca4)
+    val listaPertences1= mutableMapOf(0 to pertence1, 1 to pertence2)
+    val listaPertences2= mutableMapOf(0 to pertence3, 1 to pertence4)
 
-    guardaVolumes.guardarPecas(lista1, lista2)
-    println(guardaVolumes.dicionario)
-
-    guardaVolumes.mostrarPecas(0)
+    guardaVolumes.guardarPecas(listaPertences1)
+    guardaVolumes.guardarPecas(listaPertences2)
+    guardaVolumes.devolverPecas(0)
+    guardaVolumes.mostrarPecas()
 }
